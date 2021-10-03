@@ -4,8 +4,8 @@
 output * bg ~/media/wallpaper/waves.png fill
 
 # prevent idle when playing fullscreen video
-for_window [class="vlc"] inhibit_idle fullscreen
-for_window [app_id="firefox"] inhibit_idle fullscreen
+for_window [class="^.*"] inhibit_idle fullscreen
+for_window [app_id="^.*"] inhibit_idle fullscreen
 
 # Example configuration:
 #
