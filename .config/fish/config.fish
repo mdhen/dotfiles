@@ -9,3 +9,4 @@ set -x JAVA_HOME '/usr/lib/jvm/java-8-openjdk'
 
 set -x ANDROID_HOME '/opt/android-sdk'
 set -x ANDROID_SDK '/opt/android-sdk'
+set -x CHROME_EXECUTABLE google-chrome-stable

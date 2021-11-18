@@ -12,3 +12,10 @@ for_window [app_id="^.*"] inhibit_idle fullscreen
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
+
+output HEADLESS-1 {
+pos 1200,0
+mode 1920x1200
+bg ~/media/wallpaper/waves.png fill
+transform 90
+}
