@@ -29,19 +29,10 @@ include ~/.config/sway/config.d/vars
     #Blue light filter toggle
     bindsym XF86Display exec toggle-gammastep.sh
 
-    # Legacy
-    # Make a screenshot & copy to clipboard (of a selectable area via Shift+Print)
-    #bindsym --to-code $mod+p exec grim - | wl-copy --type image/png && notify-send "Screenshot taken" || notify-send "Failed to take screenshot"
-    #bindsym --to-code $mod+Shift+p exec grim -g "$(slurp)" - | wl-copy --type image/png && notify-send "Screenshot taken" || notify-send "Failed to take screenshot"
-    bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy "-t image/png"
+    # capture current screen to clipboard
+    bindsym Print exec grimshot copy output
     # capture all screens to clipboard    
-    #bindsym Shift+Print exec grim - | wl-copy    
-    # capture the specified screen area to clipboard    
-    #bindsym Shift+Alt+Print exec grim -g "$(slurp)" - | wl-copy    
-    # capture the focused monitor to clipboard    
-    #bindsym Shift+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
-
-
+    bindsym Shift+Print exec grimshot copy area
 
     # Start a terminal
     bindsym $mod+Return exec $term

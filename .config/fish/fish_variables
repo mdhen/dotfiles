@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR --export GRIM_DEFAULT_DIR:/home/mdhen/media/screenshots/
+SETUVAR __fish_initialized:3400
 SETUVAR _fisher_jomik_2F_fish_2D_gruvbox_files:/home/mdhen/\x2econfig/fish/functions/theme_gruvbox\x2efish
 SETUVAR _fisher_plugins:jomik/fish\x2dgruvbox
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
@@ -32,4 +33,5 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/opt/android\x2dsdk\x1e/opt/android\x2dsdk/cmdline\x2dtools/latest/bin\x1e/opt/android\x2dsdk/cmdline\x2dtools\x1e/usr/lib/jvm/java\x2d8\x2dopenjdk/bin\x1e/opt/flutter/bin\x1e/home/mdhen/bin\x1e/home/mdhen/\x2elocal/bin
